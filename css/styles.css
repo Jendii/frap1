@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(180deg, rgba(115, 57, 3, 0.75) 0%, rgba(154, 74, 0, 0.81) 100%);
+}
+.container {
+  margin: 0;
+}
+
+/** HEADER **/
+#header-nav {
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+
+  position: fixed;
+  width: 100%;
+	top: 0;
+
+}
+
+.navbar-brand {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+#logo-img {
+	background: url('../frappeology/logo_60.png') no-repeat;
+	width: 60px;
+	height: 60px;
+	margin: 5px 15px 10px 0;
+
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: "Comic Sans MS","Roboto Condensed","Georgia";
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 2%;
+  margin-left: 20px;
+  line-height: .75;
+}
+a:hover {
+    text-decoration: none;
+
+}
+.navbar-brand a:hover > h1, .navbar-brand a:focus {
+  color:#875b2e;
+  text-shadow:1px 1px white;
+
+}
+#nav-list{
+	margin-top: 3px;
+}
+#nav-list a{
+  color: white;
+  text-align: center;
+  margin-right: 50px; 
+}
+#nav-list a:hover {
+  	/*background: rgba(0,0,0,0.5);*/
+  	background:#875b2e;;
+	transition: .5s;
+	border-radius: 20px;
+	font-weight: bold;
+}
+/* HEADER ENDS HERE*/
+
+#frame1{
+	background-color: black;
+	width: 90%;
+	height: 80%;
+  	margin-left: 5%;
+  	margin-right: 5%;
+  	margin-top: 8%;
+  	border-radius: 20px;
+  	box-shadow:20px 20px 40px black; 
+}
+.mySlides{
+	padding-top: 5%;
+	margin-left: 20%;
+}
+
+h3{
+	float: right;
+	margin-right: 50%;
+	margin-top: 10%;
+}
+p{
+	border-style: 3px solid white;
+	width: 40%;
+	
+	float: right;
+	margin-right: 25%;
+	margin-top: 3%;
+}
+
+#img1{
+	background: url('../frappeology/img1_300px.jpg') no-repeat;
+	width:300px;
+	height:400px;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  
+  h3,p{
+		visibility: hidden;
+	}
+
+	#nav-list, #collapsable-nav, .container, #LAST{
+		margin: 0;
+		padding: 0;
+		/*margin-right: -5%;*/
+		/*margin-left: 2%;*/
+	}
+
+	#frame1{
+		margin-left: 5%;
+	}
+	#logo-img{
+		margin-left: 15px;
+		margin-right: 3px;
+	}
+	h1{
+		margin-left: 10px;
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  #logo-img{
+  	margin: 5px 3px 10px 5px;
+  }
+  #nav-list li a{
+  	margin: 0px 0px 0px 0px;
+  }
+
+  .mySlides{
+	padding-top: 5%;
+	margin-left: 10%;
+	}	
+	h3,p{
+		visibility: hidden;
+	}
+	#frame1{
+  	margin-top: 15%;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+ 	#logo-img{
+  	margin: 5px 1px 10px 8px;
+  }
+
+  #nav-list a{
+  	margin: 0px;
+  }
+  #frame1{
+  	margin-top: 19%;
+  }
+  .mySlides{
+	padding-top: 10%;
+	margin-left: 15%;
+	border-style: 3px solid black;
+	}
+
+	h3, p{
+		visibility: hidden;
+	}
+}
